@@ -1,7 +1,6 @@
 package ru.android.mytranslator.model.data
 
 import com.google.gson.annotations.SerializedName
-import ru.android.mytranslator.model.data.Meanings
 
 class DataModel(
     @field:SerializedName("text") val text: String?,
