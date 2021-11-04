@@ -1,30 +1,52 @@
 package ru.android.mytranslator.view.base
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.android.mytranslator.Contract
+import ru.android.mytranslator.R
 import ru.android.mytranslator.model.data.AppState
+import ru.android.mytranslator.utils.network.isOnline
+import ru.android.mytranslator.utils.ui.AlertDialogFragment
+import ru.android.mytranslator.view_model.BaseViewModel
 
-abstract class BaseActivity<T : AppState> : AppCompatActivity(), Contract.View {
+abstract class BaseActivity<T : AppState, I : Contract.Interactor<T>> : AppCompatActivity() {
 
-    protected lateinit var presenter: Contract.Presenter<T, Contract.View>
+    abstract val model: BaseViewModel<T>
 
-    protected abstract fun createPresenter(): Contract.Presenter<T, Contract.View>
+    protected var isNetworkAvailable: Boolean = false
 
-    abstract override fun renderData(appState: AppState)
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        presenter = createPresenter()
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+        isNetworkAvailable = isOnline(applicationContext)
     }
 
-    override fun onStart() {
-        super.onStart()
-        presenter.attachView(this)
+    override fun onResume() {
+        super.onResume()
+        isNetworkAvailable = isOnline(applicationContext)
+        if (!isNetworkAvailable && isDialogNull()) {
+            showNoInternetConnectionDialog()
+        }
     }
 
-    override fun onStop() {
-        super.onStop()
-        presenter.detachView(this)
+    protected fun showNoInternetConnectionDialog() {
+        showAlertDialog(
+            getString(R.string.dialog_title_device_is_offline),
+            getString(R.string.dialog_message_device_is_offline)
+        )
+    }
+
+    protected fun showAlertDialog(title: String?, message: String?) {
+        AlertDialogFragment.newInstance(title, message).show(supportFragmentManager, DIALOG_FRAGMENT_TAG)
+    }
+
+    private fun isDialogNull(): Boolean {
+        return supportFragmentManager.findFragmentByTag(DIALOG_FRAGMENT_TAG) == null
+    }
+
+    abstract fun renderData(dataModel: T)
+
+    companion object {
+        private const val DIALOG_FRAGMENT_TAG = "74a54328-5d62-46bf-ab6b-cbf5d8c79522"
     }
 }

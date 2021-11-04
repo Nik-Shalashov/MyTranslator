@@ -9,7 +9,6 @@ class Contract {
         fun renderData(appState: AppState)
     }
 
-
     interface Presenter<T : AppState, V : View> {
         fun attachView(view: V)
         fun detachView(view: V)
@@ -19,7 +18,6 @@ class Contract {
     interface Interactor<T> {
         fun getData(word: String, fromRemoteSource: Boolean): Observable<T>
     }
-
 
     interface Repository<T> {
         fun getData(word: String): Observable<T>
