@@ -50,4 +50,5 @@
             tools:visibility="visible"
             android:contentDescription="@string/delete_description"/>
     </FrameLayout>
+
 </LinearLayout>
