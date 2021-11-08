@@ -1,25 +1,17 @@
 package ru.android.mytranslator.application
 
 import android.app.Application
-import dagger.android.AndroidInjector
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasAndroidInjector
-import ru.android.mytranslator.di.AppComponent
-import javax.inject.Inject
+import org.koin.core.context.startKoin
+import ru.android.mytranslator.di.application
+import ru.android.mytranslator.di.mainScreen
 
-class TranslatorApp : Application(), HasAndroidInjector {
 
-    @Inject
-    lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
-
-    override fun androidInjector(): AndroidInjector<Any> {
-        return dispatchingAndroidInjector
-    }
+class TranslatorApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        AppComponent.Builder.application(this)
-        AppComponent.Builder.build()
-        AppComponent.inject(this)
+        startKoin {
+            modules(listOf(application, mainScreen))
+        }
     }
 }
