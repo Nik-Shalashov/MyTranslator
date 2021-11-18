@@ -1,0 +1,4 @@
+#Sat Sep 28 14:33:29 GMT+04:00 2019
+base.0=D\:\\Documents\\GeekBrains\\TranslatorCourse\\Translator\\HistoryScreenFeature\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

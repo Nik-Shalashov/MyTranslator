@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+	package
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:3:9-53
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:2:9-65
+	android:versionCode
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:1-16:12
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:1:11-69
+dist:module
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:5:5-12:19
+	dist:instant
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:6:13-33
+	dist:title
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:7:13-60
+dist:delivery
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:8:9-10:25
+dist:on-demand
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:9:13-31
+dist:fusing
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:11:9-44
+	dist:include
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:11:22-41
+application
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:13:5-15:19
+activity#geekbrains.ru.historyscreenfeature.DescriptionActivityFeature
+ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:14:9-64
+	android:name
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml:14:19-61
+uses-sdk
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		ADDED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml
+		INJECTED from D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\AndroidManifest.xml

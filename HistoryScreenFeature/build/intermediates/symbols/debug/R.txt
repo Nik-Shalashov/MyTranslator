@@ -1,0 +1,5 @@
+int id description_header 0x7e010000
+int id description_imageview 0x7e010001
+int id description_screen_swipe_refresh_layout 0x7e010002
+int id description_textview 0x7e010003
+int layout activity_description_feature 0x7e020000
