@@ -1,0 +1,5 @@
+# Referenced at D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\build\intermediates\merged_manifests\debug\AndroidManifest.xml:26
+-keep class geekbrains.ru.historyscreenfeature.DescriptionActivityFeature { <init>(); }
+# Referenced at D:\Documents\GeekBrains\TranslatorCourse\Translator\HistoryScreenFeature\src\main\res\layout\activity_description_feature.xml:2
+-keep class androidx.swiperefreshlayout.widget.SwipeRefreshLayout { <init>(...); }
+
